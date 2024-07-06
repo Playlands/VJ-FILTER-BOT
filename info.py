@@ -73,7 +73,7 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'moviesscloud') # Support Chat Link W
 
 # True Or False
 PM_SEARCH = bool(environ.get('PM_SEARCH', True)) # In Pm Search Currently Spell Check Doesn't Work.
-SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False))
+SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True))
 VERIFY = bool(environ.get('VERIFY', False))
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
@@ -117,7 +117,7 @@ QUALITIES = ["360p", "480p", "720p", "1080p", "1440p", "2160p"]
 
 
 # Online Stream and Download
-STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or Flase
+STREAM_MODE = bool(environ.get('STREAM_MODE', False)) # Set True or Flase
 
 # If Stream Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 MULTI_CLIENT = False
